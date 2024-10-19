@@ -1,0 +1,85 @@
+#promo-video {
+    gap: 20px;
+    background-color: #192b3c;
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2% 20%;
+}
+
+#promo-video h2 {
+    color: rgb(255, 255, 255);
+    opacity: 1;
+    text-decoration: cadetblue;
+    font-size: 30px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+#promo-video-element {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 120px;
+    height: 120px;
+    background: url('images/logo') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    z-index: 5;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    display: none;
+    z-index: 15;
+}
+
+@media only screen and (max-width: 801px) {
+    #promo-video h2 {
+        color: rgb(0, 0, 0);
+        opacity: 1;
+        text-decoration: cadetblue;
+        font-size: 1rem;
+    }
+    #promo-video {
+        gap: 20px;
+        background-color: #1e00ff00;
+        position: relative;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 1% 10%;
+    }
+}

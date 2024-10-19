@@ -1,0 +1,137 @@
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 80px;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/bg.jpg");
+    background-size: cover;
+    background-position: center;
+    border-top: 4px solid #0099ff;
+}
+
+footer .c {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    max-width: 250px;
+}
+
+footer h4 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0099ff;
+    border-bottom: 2px solid #0099ff;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-size: 14px;
+    color: #e0e0e0;
+    margin: 0 0 10px 0;
+    line-height: 1.6;
+    opacity: 0.9;
+}
+
+footer a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #fdfdfd;
+    margin-bottom: 12px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer a:hover {
+    color: #0099ff;
+    transform: translateX(5px);
+}
+
+.follow {
+    margin-top: 20px;
+}
+
+.follow i {
+    color: #0099ff;
+    padding-right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.follow i:hover {
+    transform: scale(1.1);
+    color: #00bfff;
+    /* Slightly lighter blue on hover */
+}
+
+.in .row img {
+    border: 2px solid #088178;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.in img:hover {
+    transform: scale(1.05);
+}
+
+.footer .copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.copyright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #00020a;
+    padding: 15px 0;
+}
+
+.copyright p {
+    color: #d0d0d0;
+    font-size: 14px;
+    margin: 0;
+}
+
+.copyright p a {
+    color: #0099ff;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.copyright p a:hover {
+    text-decoration: underline;
+    color: #00bfff;
+    /* Slightly lighter blue on hover */
+}
+
+@media only screen and (max-width: 575px) {
+    footer {
+        display: block;
+        padding: 30px 15px;
+        background-color: #10121d59;
+    }
+    footer .c {
+        max-width: 100%;
+        margin-bottom: 25px;
+    }
+    footer h4 {
+        font-size: 15px;
+        padding-bottom: 12px;
+    }
+    footer p {
+        font-size: 13px;
+    }
+    .follow i {
+        font-size: 25px;
+        padding-right: 12px;
+    }
+    .copyright {
+        padding: 10px 0;
+    }
+}

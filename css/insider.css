@@ -1,0 +1,166 @@
+#isei-insider {
+    background: linear-gradient(135deg, #004472, #00009e, #012831);
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+#isei-insider h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+#isei-insider p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.insider-form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    opacity: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    flex: 1 1 250px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-group i {
+    position: absolute;
+    left: 15px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 18px;
+    pointer-events: none;
+}
+
+.insider-form input[type="text"],
+.insider-form input[type="email"] {
+    padding: 15px 20px 15px 45px;
+    width: 100%;
+    outline: none;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    font-size: 16px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: background 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: -5px 5px 2px rgba(36, 36, 36, 0.39);
+    border-color: #00a2ff;
+}
+
+.subscribe-btn {
+    background-color: #00a2ff;
+    color: white;
+    padding: 15px 70px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #ffffff;
+    color: #00a2ff;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#isei-insider::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.1), transparent 70%);
+    animation: pulse 6s infinite;
+    z-index: 0;
+}
+
+@keyframes pulse {
+    0%,
+    100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+@media (max-width: 768px) {
+    #isei-insider h1 {
+        font-size: 32px;
+    }
+    #isei-insider p {
+        font-size: 18px;
+    }
+    .insider-form {
+        gap: 15px;
+    }
+    .form-group {
+        width: 100%;
+    }
+    .subscribe-btn {
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    #isei-insider h1 {
+        font-size: 28px;
+    }
+    #isei-insider p {
+        font-size: 16px;
+    }
+    .subscribe-btn {
+        padding: 15px;
+        font-size: 14px;
+    }
+}

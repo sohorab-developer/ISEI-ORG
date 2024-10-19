@@ -1,0 +1,93 @@
+/*===============faq===============*/
+
+#faq {
+    background-color: #f9f9f900;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#faq-border {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+#faq-border:hover {
+    transform: translateY(-10px);
+}
+
+#faq p {
+    font-size: 1.25rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#faq p i {
+    color: #0056b3;
+    margin-right: 10px;
+}
+
+#faq-txt {
+    font-size: 1rem;
+    color: #666;
+}
+
+#faq-txt i {
+    color: #02e1ff;
+    margin-right: 10px;
+}
+
+#faq-txt a.faq-link {
+    color: #02e1ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#faq-txt a.faq-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+
+/*=============== BREAKPOINTS ===============*/
+
+@media (max-width: 768px) {
+    #faq {
+        padding: 40px 15px;
+    }
+    #faq-border {
+        padding: 15px;
+    }
+    #faq p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    #faq-txt {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #faq {
+        padding: 30px 10px;
+    }
+    #faq-border {
+        padding: 10px;
+    }
+    #faq p {
+        font-size: 1rem;
+        line-height: 1.4;
+    }
+    #faq-txt {
+        font-size: 0.9rem;
+    }
+    #faq p i,
+    #faq-txt i {
+        font-size: 1.2rem;
+    }
+}
