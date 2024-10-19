@@ -20,12 +20,14 @@
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/founder.css">
     <link rel="stylesheet" href="css/mentor.css">
+    <link rel="stylesheet" href="css/insider.css">
     <link rel="stylesheet" href="css/blog.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/preloader.css">
     <link rel="stylesheet" href="css/cursor.css">
     <link rel="stylesheet" href="css/extra.css">
-
+    <!--=============== AOS ===============-->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
 
 
@@ -356,21 +358,94 @@
         </div>
 
         <div class="btn-container">
-            <a href="#" class="btn">Contact Us</a>
+            <a href="#" class="btn">Enroll Now →</a>
         </div>
     </section>
 
 
 
 
-    <!--=============== COURSES SECTION ===============-->
+    <!--=============== COUNTING SECTION ===============-->
+    <section id="counter-section">
+        <div class="counter-box">
+            <i class="fas fa-user-graduate"></i>
+            <div class="counter" data-target="10000">0</div><span>+</span>
+            <p>Students</p>
+        </div>
+        <div class="counter-box">
+            <i class="fas fa-chalkboard-teacher"></i>
+            <div class="counter" data-target="200">0</div><span>+</span>
+            <p>Mentors</p>
+        </div>
+        <div class="counter-box">
+            <i class="fas fa-book-open"></i>
+            <div class="counter" data-target="100">0</div><span>+</span>
+            <p>Courses</p>
+        </div>
+        <div class="counter-box">
+            <i class="fas fa-certificate"></i>
+            <div class="counter" data-target="12000">0</div><span>+</span>
+            <p>Certificates</p>
+        </div>
+    </section>
 
+
+
+
+    <!-- <style>
+        @keyframes pulseWave {
+            0% {
+                box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+            }
+            50% {
+                box-shadow: 0 0 30px 60px rgba(0, 123, 255, 0);
+            }
+            100% {
+                box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+            }
+        }
+        
+        .multi-pulse-glow-div {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #fff;
+            border: 4px solid rgba(0, 123, 255, 0.7);
+            position: relative;
+            animation: pulseWave 2s infinite;
+        }
+        
+        .multi-pulse-glow-div::before,
+        .multi-pulse-glow-div::after {
+            content: '';
+            position: absolute;
+            top: -20px;
+            left: -20px;
+            right: -20px;
+            bottom: -20px;
+            border-radius: 50%;
+            border: 4px solid rgba(0, 123, 255, 0.5);
+            animation: pulseWave 2s infinite;
+        }
+        
+        .multi-pulse-glow-div::before {
+            animation-delay: 0.3s;
+            /* Slight delay to create staggered effect */
+        }
+        
+        .multi-pulse-glow-div::after {
+            animation-delay: 0.6s;
+            /* Another delay for the third wave */
+        }
+    </style> -->
+
+    <!--=============== COURSES SECTION ===============-->
     <section id="course">
         <div id="cent-wrapper">
-            <h1>Our Courses</h1>
+            <h1 data-aos="fade-up">Our Courses</h1>
             <div class="wrapper">
                 <!-- AOSH UK -->
-                <div class="slide">
+                <div class="slide" data-aos="fade-up" data-aos-delay="100">
                     <img src="css/images/bg.jpg" alt="Course 1" class="course-icon">
                     <h3>AOSH UK</h3>
                     <p>First Aid, Health & Safety, Fire Safety certifications.</p>
@@ -397,7 +472,7 @@
                 </div>
 
                 <!-- IOSH MS & EOSH UK -->
-                <div class="slide">
+                <div class="slide" data-aos="fade-up" data-aos-delay="200">
                     <img src="css/images/bg.jpg" alt="Course 2" class="course-icon">
                     <h3>IOSH MS & EOSH UK</h3>
                     <p>Managing safety with advanced Risk Assessment programs.</p>
@@ -424,7 +499,7 @@
                 </div>
 
                 <!-- Exemplar Global -->
-                <div class="slide">
+                <div class="slide" data-aos="fade-up" data-aos-delay="300">
                     <img src="css/images/bg.jpg" alt="Course 3" class="course-icon">
                     <h3>Exemplar Global</h3>
                     <p>Advanced Diploma in Occupational Health and Safety.</p>
@@ -451,7 +526,7 @@
                 </div>
 
                 <!-- Lean Six Sigma -->
-                <div class="slide">
+                <div class="slide" data-aos="fade-up" data-aos-delay="400">
                     <img src="css/images/bg.jpg" alt="Course 4" class="course-icon">
                     <h3>Lean Six Sigma</h3>
                     <p>Green and Black Belt certifications for process improvement.</p>
@@ -478,7 +553,7 @@
                 </div>
 
                 <!-- International HSE Short Courses -->
-                <div class="slide">
+                <div class="slide" data-aos="fade-up" data-aos-delay="500">
                     <img src="css/images/bg.jpg" alt="Course 5" class="course-icon">
                     <h3>International HSE Short Courses</h3>
                     <p>Training in Risk Assessment and Emergency Response.</p>
@@ -507,27 +582,52 @@
         </div>
     </section>
 
+    <!-- =============== INSIDER SECTION =============== -->
+    <section id="isei-insider" data-aos="fade-up" data-aos-duration="1000">
+        <div class="insider-content" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <h1 data-aos="fade-up" data-aos-duration="1000">Join the ISEI Insider Program</h1>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">Be the first to receive our latest updates, exclusive content, and industry insights. Subscribe now!</p>
+            <form class="insider-form" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <div class="form-group" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+                    <i class="fas fa-user"></i>
+                    <input type="text" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">
+                    <button type="submit" class="subscribe-btn">Subscribe</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
 
     <!-- =============== FOUNDER SECTION =============== -->
 
     <section id="founder-overview">
-        <h1>Meet Our Founder</h1>
+        <h1 data-aos="fade-up" data-aos-duration="1000">Meet Our Founder</h1>
         <div class="founder-wrapper">
-            <div class="founder-photo">
+            <div class="founder-photo" data-aos="fade-right" data-aos-duration="1000">
                 <img src="css/images/mentor-1.jfif" alt="Founder of ISEI" class="mentor-photos">
             </div>
-            <div class="founder-details">
-                <h2>Dr. [Full Name]</h2>
-                <p><strong>Position:</strong> Founder & CEO</p>
-                <p><strong>Background:</strong> Dr. [Full Name] is a renowned expert in safety engineering with over [number] years of experience in the field. He/She has dedicated his/her career to promoting safety standards and practices across various
+            <div class="founder-details" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+                <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">Dr. [Full Name]</h2>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><strong>Position:</strong> Founder & CEO</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><strong>Background:</strong> Dr. [Full Name] is a renowned expert in safety engineering with over [number] years of experience in the field. He/She has dedicated his/her career to promoting safety standards and practices across various
                     industries.
                 </p>
-                <p><strong>Vision:</strong> Dr. [Full Name] founded ISEI with the vision to create a safer working environment globally, ensuring that safety becomes an integral part of organizational culture.</p>
-                <p><strong>Achievements:</strong> He/She has authored several publications on safety engineering and has been a speaker at numerous international conferences.</p>
-                <p><strong>Contact:</strong> [Email or Phone Number]</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700"><strong>Vision:</strong> Dr. [Full Name] founded ISEI with the vision to create a safer working environment globally, ensuring that safety becomes an integral part of organizational culture.</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800"><strong>Achievements:</strong> He/She has authored several publications on safety engineering and has been a speaker at numerous international conferences.</p>
+                <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900"><strong>Contact:</strong> [Email or Phone Number]</p>
             </div>
         </div>
     </section>
+
 
 
     <!-- =============== MENTORS SECTION =============== -->
@@ -536,78 +636,86 @@
         <h1>Meet Our Mentors</h1>
         <div class="mentor-wrapper">
             <!-- Mentor 1 -->
-            <div class="mentor-card">
+            <div class="mentor-card" data-aos="fade-up" data-aos-duration="800">
                 <img src="css/images/mentor-1.jfif" alt="Mentor 1" class="mentor-photo">
                 <h3>John Doe</h3>
-                <p><i class="fas fa-helmet-safety"></i> Senior Safety Engineer</p>
-                <div class="mentor-details">
-                    <p><i class="fas fa-award"></i> 15+ Years of Experience</p>
-                    <p><i class="fas fa-certificate"></i> Certified Risk Assessor</p>
-                    <p><i class="fas fa-book-open"></i> Safety Management Specialist</p>
-                </div>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <div id="align">
+                    <p><i class="fas fa-helmet-safety"></i> Senior Safety Engineer</p>
+                    <div class="mentor-details">
+                        <p><i class="fas fa-award"></i> 15+ Years of Experience</p>
+                        <p><i class="fas fa-certificate"></i> Certified Risk Assessor</p>
+                        <p><i class="fas fa-book-open"></i> Safety Management Specialist</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
             </div>
 
             <!-- Mentor 2 -->
-            <div class="mentor-card">
+            <div class="mentor-card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
                 <img src="css/images/mentor-2.webp" alt="Mentor 2" class="mentor-photo">
                 <h3>Jane Smith</h3>
-                <p><i class="fas fa-user-md"></i> Occupational Health Specialist</p>
-                <div class="mentor-details">
-                    <p><i class="fas fa-award"></i> 10+ Years of Experience</p>
-                    <p><i class="fas fa-certificate"></i> ISO 45001 Certified</p>
-                    <p><i class="fas fa-heart"></i> Workplace Health Expert</p>
-                </div>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <div id="align">
+                    <p><i class="fas fa-user-md"></i> Occupational Health Specialist</p>
+                    <div class="mentor-details">
+                        <p><i class="fas fa-award"></i> 10+ Years of Experience</p>
+                        <p><i class="fas fa-certificate"></i> ISO 45001 Certified</p>
+                        <p><i class="fas fa-heart"></i> Workplace Health Expert</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
             </div>
 
             <!-- Mentor 3 -->
-            <div class="mentor-card">
+            <div class="mentor-card" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
                 <img src="css/images/mentor-1.jfif" alt="Mentor 3" class="mentor-photo">
                 <h3>Michael Lee</h3>
-                <p><i class="fas fa-leaf"></i> Environmental Safety Consultant</p>
-                <div class="mentor-details">
-                    <p><i class="fas fa-award"></i> 12+ Years of Experience</p>
-                    <p><i class="fas fa-certificate"></i> Environmental Safety Certified</p>
-                    <p><i class="fas fa-globe"></i> Sustainability Advocate</p>
-                </div>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <div id="align">
+                    <p><i class="fas fa-leaf"></i> Environmental Safety Consultant</p>
+                    <div class="mentor-details">
+                        <p><i class="fas fa-award"></i> 12+ Years of Experience</p>
+                        <p><i class="fas fa-certificate"></i> Environmental Safety Certified</p>
+                        <p><i class="fas fa-globe"></i> Sustainability Advocate</p>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
 
+
+
     <!-- =============== BLOG SECTION =============== -->
     <section id="blog-overview">
-        <h1>Our Latest Insights</h1>
-        <p class="blog-intro">Stay updated with our latest articles, industry news, and expert opinions.</p>
+        <h1 data-aos="fade-up" data-aos-duration="1000">Our Latest Insights</h1>
+        <p class="blog-intro" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Stay updated with our latest articles, industry news, and expert opinions.</p>
 
         <div class="blog-wrapper">
             <!-- Blog Post -->
-            <div class="blog-post">
+            <div class="blog-post" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
                 <div class="blog-description">
-                    <h3>5 Key Strategies for Workplace Safety</h3>
-                    <p class="blog-date"><i class="fas fa-calendar-alt"></i> October 15, 2024</p>
-                    <p>Discover essential strategies for improving safety in the workplace, ensuring a secure environment for everyone.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam debitis, unde vel dignissimos blanditiis, officiis esse accusamus eligendi molestiae at, facere iure eaque vero delectus repellat consequatur? Illum, atque vel.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam debitis, unde vel dignissimos blanditiis, officiis esse accusamus eligendi molestiae at, facere iure eaque vero delectus repellat consequatur? Illum, atque vel.</p>
-                    <div class="btn-container">
+                    <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">5 Key Strategies for Workplace Safety</h3>
+                    <p class="blog-date" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><i class="fas fa-calendar-alt"></i> October 15, 2024</p>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="700">Discover essential strategies for improving safety in the workplace, ensuring a secure environment for everyone.</p>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam debitis, unde vel dignissimos blanditiis, officiis esse accusamus eligendi molestiae at, facere iure eaque vero delectus repellat consequatur? Illum, atque vel.</p>
+                    <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="900">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam debitis, unde vel dignissimos blanditiis, officiis esse accusamus eligendi molestiae at, facere iure eaque vero delectus repellat consequatur? Illum, atque vel.</p>
+                    <div class="btn-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
                         <a href="#" class="btn">Enroll Now →</a>
                     </div>
                 </div>
-                <div class="blog-image-wrapper">
+                <div class="blog-image-wrapper" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="500">
                     <img src="css/images/bg.jpg" alt="Blog Post 1" class="blog-image">
                 </div>
             </div>
@@ -627,39 +735,32 @@
     </section> -->
 
     <!--=============== CONTACT SECTION ===============-->
-    <section id="contact">
-        <div id="cent-wrapper">
+    <section id="contact" data-aos="fade-up" data-aos-duration="1000">
+        <div id="cent-wrapper" data-aos="fade-up" data-aos-duration="1000">
             <h1>Get in Touch</h1>
         </div>
-        <div class="contact-container">
-            <div class="contact-description">
+        <div class="contact-container" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+            <div class="contact-description" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
                 <h2>Contact Us</h2>
                 <p>If you have any questions or comments, feel free to reach out to us. We're here to help and would love to hear from you!</p>
                 <p>Our team is available Monday to Friday, 9 AM to 5 PM.</p>
                 <p>We will get back to you as soon as possible.</p>
             </div>
-            <form class="contact-form" id="contactForm">
+            <form class="contact-form" id="contactForm" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="600">
 
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="name" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="700">Name:</label>
+                <input type="text" id="name" name="name" required data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="email" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="900">Email:</label>
+                <input type="email" id="email" name="email" required data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1000">
 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
+                <label for="message" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1100">Message:</label>
+                <textarea id="message" name="message" rows="5" required data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1200"></textarea>
 
-                <button type="submit" class="btn">Send Message</button>
+                <button type="submit" class="btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1300">Send Message</button>
             </form>
         </div>
     </section>
-
-
-
-
-
-
-
 
 
 
@@ -723,6 +824,15 @@
     <script src="javascript/main.js"></script>
     <script src="javascript/cursor.js"></script>
     <script src="javascript/preloader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out',
+        });
+    </script>
+
 
 </body>
 
